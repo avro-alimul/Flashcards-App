@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="language-select">
+            <select id="language">
+                <option value="en">English</option>
+                <option value="bn">বাংলা</option>
+            </select>
+        </div>
+
+        <h1 id="title">Flashcards</h1>
+
+        <div class="flashcard-container">
+            <div id="flashcard" class="card">
+                <div class="front" id="cardFront">Question?</div>
+                <div class="back" id="cardBack">Answer</div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="prevBtn">◀</button>
+            <span id="cardCounter">1/1</span>
+            <button id="nextBtn">▶</button>
+        </div>
+
+        <div class="add-form">
+            <input type="text" id="questionInput" placeholder="Enter question" />
+            <input type="text" id="answerInput" placeholder="Enter answer" />
+            <button id="addCardBtn">Add Flashcard</button>
+        </div>
+
+        <div class="actions">
+            <button id="exportBtn">Export Cards</button>
+            <div class="import-container">
+                <label for="importFile" class="import-label">Import Cards</label>
+                <input type="file" id="importFile" accept=".json" />
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
